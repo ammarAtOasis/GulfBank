@@ -2,44 +2,94 @@
 sflag=false;
 function sopen()
 {
-if(sflag==true)
-{
-document.getElementById('search_menu_content').style.display='none';
-sflag=false;
+	if(sflag==true)
+	{
+		document.getElementById('search_menu_content').style.display='none';
+		sflag=false;
+	}
+	else
+	{
+		document.getElementById('search_menu_content').style.display='inline';
+		sflag=true;
+	}
 }
-else
-{
-document.getElementById('search_menu_content').style.display='inline';
-sflag=true;
-}
-}
-
 
 function snumbers()
 {
-x=0;
-if(document.getElementById('sphoto').checked){x++;}
-if(document.getElementById('svideo').checked){x++;}
-if(document.getElementById('saudio').checked){x++;}
-if(document.getElementById('svector').checked){x++;}
+	x=0;
+	if(document.getElementById('sphoto').checked){x++;}
+	if(document.getElementById('svideo').checked){x++;}
+	if(document.getElementById('saudio').checked){x++;}
+	if(document.getElementById('svector').checked){x++;}
+	
+	if(x=={XSEARCH})
+	{
+		sword="{WORD_ALL}";
+	}
+	else
+	{
+		sword="{WORD_TYPES}"+": "+x;
+	}
 
+	document.getElementById('stl').innerHTML=sword;
+}
 
-
-if(x=={XSEARCH})
+function search_go(value)
 {
-sword="{WORD_ALL}";
+	document.getElementById('search').value=value;
+	$('#site_search').submit();
 }
-else
+
+function show_search()
 {
-sword="{WORD_TYPES}"+": "+x;
+	var req = new JsHttpRequest();
+	
+	 req.onreadystatechange = function()
+    {
+        if (req.readyState == 4)
+        {
+			search_result=req.responseText
+			if(search_result!="")
+			{
+				$('#instant_search').slideDown("fast");
+				document.getElementById('instant_search').innerHTML =search_result;
+			}
+			else
+			{
+				document.getElementById('instant_search').style.display='none';
+			}
+        }
+    }
+    req.open(null, '{SITE_ROOT}members/search_lite.php', true);
+    req.send( { search: document.getElementById('search').value } );
 }
 
+$(document).ready(function(){
 
-document.getElementById('stl').innerHTML=sword;
-}
+	$('#search').keyup(function() 
+	{
+ 		 show_search();
+	});
+	
+	
+	$("#instant_search").hover
+	(
+			function () 
+			{
+				
+			},
+			function () 
+			{
+				$('#instant_search').slideUp("fast");
+				document.getElementById('instant_search').innerHTML ="";
+			}
+	);
+	
+});
+
 </script>
-<form method='get' action='{SITE_ROOT}index.php'>
-<input class="ibox_search" type='text' name='search' id="search" value='{SEARCH}' onClick="this.value='';"><div class="search_menu"><a href="javascript:sopen()"  id="stl">{WORD_ALL}</a><span>&nbsp;</span></div><input class="ibox_search_submit" type='submit' value='{WORD_SEARCH}'>
+<form method='get' action='{SITE_ROOT}index.php' id='site_search'>
+<input class="ibox_search" type='text' name='search' id="search" value='{SEARCH}' onClick="this.value='';" autocomplete="off"><div class="search_menu"><div><a href="javascript:sopen()"  id="stl">{WORD_ALL}</a><span>&nbsp;</span></div></div><input class="ibox_search_submit" type='submit' value=''>
 
 <div id="search_advanced"><a href="{SITE_ROOT}members/advanced_search.php" class="small">{WORD_ADVANCED_SEARCH}</a></div>
 
@@ -53,3 +103,4 @@ document.getElementById('stl').innerHTML=sword;
 </ul>
 </div>
 </form>
+<div id="instant_search"></div>

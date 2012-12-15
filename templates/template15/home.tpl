@@ -5,44 +5,80 @@
 <link rel=stylesheet type="text/css" href="{TEMPLATE_ROOT}style.css">
 <script language="javascript" src="{SITE_ROOT}inc/scripts.js"></script>
 <script src="{SITE_ROOT}inc/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{SITE_ROOT}members/JsHttpRequest.js" type="text/javascript"></script>
 <meta name="description" content="{DESCRIPTION}">
 <meta name="keywords" content="{KEYWORDS}">
 <meta http-equiv="Content-Type" content="text/html; charset={MTG}">
 <link href="{SITE_ROOT}images/favicon.gif" type="image/gif" rel="icon">
 <link href="{SITE_ROOT}images/favicon.gif" type="image/gif" rel="shortcut icon">
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20937502-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
 </head>
 <body>
 <div id="header">
-<div id="logo"><a href="{SITE_ROOT}"><img src="{TEMPLATE_ROOT}images/logo.gif" width="220" height="37" border="0" alt="{SITE_NAME}"></a></div>
+<div id="logo"><a href="{SITE_ROOT}"><img src="{TEMPLATE_ROOT}images/logo.png" width="319" height="37" border="0" alt="{SITE_NAME}"></a></div>
 {HORIZONTAL_MENU}
 </div>
 
 <div id="box_search">{BOX_SEARCH}</div>
 <div id="box_languages">{LANGUAGES_LITE}</div>
 <div id="menu">
-<div id="menu_left"></div>
 {BOX_MEMBERS}
-<div id="menu_right"></div>
 {BOX_SHOPPING_CART_LITE}
 </div>
 
 <div class="body_content_home">
+
+
+
+
+<script type="text/javascript" src="{SITE_ROOT}inc/fadeslideshow.js">
+
+/***********************************************
+* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+<script type="text/javascript">
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [970, 400], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["{SITE_ROOT}images/slide1.jpg", "{SITE_ROOT}photo/monastery-.html", "", ""],
+		["{SITE_ROOT}images/slide2.jpg", "{SITE_ROOT}photo/sewer-manhole.html", "", ""],
+		["{SITE_ROOT}images/slide3.jpg", "{SITE_ROOT}photo/arrogant-cat.html", "", ""],
+		["{SITE_ROOT}images/slide4.jpg", "{SITE_ROOT}photo/fortress.html", "", ""]//<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 2500, //transition duration (milliseconds)
+	descreveal: "always",
+	togglerid: ""
+})
+
+
+
+
+</script>
+
+
+
+<div id="fadeshow1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript" language="JavaScript" src="{SITE_ROOT}members/JsHttpRequest.js"></script>
 <script type="text/javascript" language="JavaScript">
 
@@ -76,19 +112,21 @@ zcomponent(13,'downloaded');
 
 
 
-
+<table border="0" cellapdding="0" cellspacing="0">
+<tr valign="top">
+<td>
 <div id="column_center">
 
 
 
 <div id="tabs">
 <ul>
-<li id="menu_downloaded" class="tact"><a href="#" onClick="zcomponent(13,'downloaded');"><span>{WORD_DOWNLOADED}</span></a></li>
-<li id="menu_featured"><a href="#" onClick="zcomponent(12,'featured');"><span>{WORD_FEATURED}</span></a></li>
-<li id="menu_popular"><a href="#" onClick="zcomponent(14,'popular');"><span>{WORD_POPULAR}</span></a></li>
-<li id="menu_new"><a href="#" onClick="zcomponent(16,'new');"><span>{WORD_NEW}</span></a></li>
-<li id="menu_free"><a href="#" onClick="zcomponent(17,'free');"><span>{WORD_FREE}</span></a></li>
-<li id="menu_random"><a href="#" onClick="zcomponent(15,'random');"><span>{WORD_RANDOM}</span></a></li>
+<li id="menu_downloaded" class="tact"><a href="javascript:zcomponent(13,'downloaded');"><span>{WORD_DOWNLOADED}</span></a></li>
+<li id="menu_featured"><a href="javascript:zcomponent(12,'featured');"><span>{WORD_FEATURED}</span></a></li>
+<li id="menu_popular"><a href="javascript:zcomponent(14,'popular');"><span>{WORD_POPULAR}</span></a></li>
+<li id="menu_new"><a href="javascript:zcomponent(16,'new');"><span>{WORD_NEW}</span></a></li>
+<li id="menu_free"><a href="javascript:zcomponent(17,'free');"><span>{WORD_FREE}</span></a></li>
+<li id="menu_random"><a href="javascript:zcomponent(15,'random');"><span>{WORD_RANDOM}</span></a></li>
 </ul>
 </div>
 
@@ -98,9 +136,9 @@ zcomponent(13,'downloaded');
 <div class="home_text">
 <h1>Join Us Today</h1>
 
-<p>Gulf Image Bank is a media stock site and photographers community. Every user has different communuty tools: personal blog, messages, reviews, testimonials, friends, avatars.</p>
+<p>Photo Video Store is a media stock site and photographers community. Every user has different communuty tools: personal blog, messages, reviews, testimonials, friends, avatars.</p>
 
-<p>Search for royalty-free stock photography, vector illustrations, stock video footage and audio files. Buy stock with Gulf Image Bank by Credits, 1 credit is equal to AED1 only</p>
+<p>Search for royalty-free stock photography, vector illustrations, stock video footage and audio files. Buy stock with Photo Video Store by Credits or get a Subscription.</p>
 </div>
 
 <div class="home_tags">
@@ -110,7 +148,8 @@ zcomponent(13,'downloaded');
 </div>
 
 
-
+</td>
+<td>
 
 <div id="column_right">
 
@@ -129,27 +168,30 @@ zcomponent(13,'downloaded');
 
 <h2 style="margin-top:16">{WORD_COLORS}</h2>
 <map name="colors">
-<area href="{SITE_ROOT}index.php?color=red&types=photos" shape="rect" coords="0,0,20,20">
-<area href="{SITE_ROOT}index.php?color=orange&types=photos" shape="rect" coords="23,0,43,20">
-<area href="{SITE_ROOT}index.php?color=yellow&types=photos" shape="rect" coords="46,0,66,20">
-<area href="{SITE_ROOT}index.php?color=green&types=photos" shape="rect" coords="69,0,89,20">
-<area href="{SITE_ROOT}index.php?color=cian&types=photos" shape="rect" coords="92,0,112,20">
-<area href="{SITE_ROOT}index.php?color=blue&types=photos" shape="rect" coords="115,0,135,20">
-<area href="{SITE_ROOT}index.php?color=magenta&types=photos" shape="rect" coords="138,0,158,20">
-<area href="{SITE_ROOT}index.php?color=black&types=photos" shape="rect" coords="161,0,181,20">
+<area href="{SITE_ROOT}index.php?color=red&sphoto=1" shape="rect" coords="0,0,20,20">
+<area href="{SITE_ROOT}index.php?color=orange&sphoto=1" shape="rect" coords="23,0,43,20">
+<area href="{SITE_ROOT}index.php?color=yellow&sphoto=1" shape="rect" coords="46,0,66,20">
+<area href="{SITE_ROOT}index.php?color=green&sphoto=1" shape="rect" coords="69,0,89,20">
+<area href="{SITE_ROOT}index.php?color=cian&sphoto=1" shape="rect" coords="92,0,112,20">
+<area href="{SITE_ROOT}index.php?color=blue&sphoto=1" shape="rect" coords="115,0,135,20">
+<area href="{SITE_ROOT}index.php?color=magenta&sphoto=1" shape="rect" coords="138,0,158,20">
+<area href="{SITE_ROOT}index.php?color=black&sphoto=1" shape="rect" coords="161,0,181,20">
 </map>
 <img src="{TEMPLATE_ROOT}images/colors.png" width="181" height="20" border="0"  usemap="#colors">
 
 </div>
 
 
-</div>			
+</div>	
+</td>
+</tr>
+</table>
 </div>
 
 
 <div id="footer">
 <div>{BOTTOM_MENU}</div>
-<div style='padding-top:6px'>Copyright © 2010 <a href="http://www.gulfimagebank.com/">Gulf Image Bank</a> - {WORD_RESERVED}.</div>
+<div style='padding-top:6px'>Copyright &copy; 2010 <a href="http://www.cmsaccount.com/">Photo Video Store</a> - {WORD_RESERVED}.</div>
 </div>
 
 

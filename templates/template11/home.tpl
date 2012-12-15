@@ -6,6 +6,7 @@
 <link rel=stylesheet type="text/css" href="{TEMPLATE_ROOT}style.css">
 <script language="javascript" src="{SITE_ROOT}inc/scripts.js"></script>
 <script src="{SITE_ROOT}inc/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{SITE_ROOT}members/JsHttpRequest.js" type="text/javascript"></script>
 <meta name="description" content="{DESCRIPTION}">
 <meta name="keywords" content="{KEYWORDS}">
 <meta http-equiv="Content-Type" content="text/html; charset={MTG}">
@@ -119,14 +120,14 @@ zcomponent(13,'downloaded');
 
 <h2 style="margin-top:16">{WORD_COLORS}</h2>
 <map name="colors">
-<area href="{SITE_ROOT}index.php?color=red&types=photos" shape="rect" coords="0,0,20,20">
-<area href="{SITE_ROOT}index.php?color=orange&types=photos" shape="rect" coords="23,0,43,20">
-<area href="{SITE_ROOT}index.php?color=yellow&types=photos" shape="rect" coords="46,0,66,20">
-<area href="{SITE_ROOT}index.php?color=green&types=photos" shape="rect" coords="69,0,89,20">
-<area href="{SITE_ROOT}index.php?color=cian&types=photos" shape="rect" coords="92,0,112,20">
-<area href="{SITE_ROOT}index.php?color=blue&types=photos" shape="rect" coords="115,0,135,20">
-<area href="{SITE_ROOT}index.php?color=magenta&types=photos" shape="rect" coords="138,0,158,20">
-<area href="{SITE_ROOT}index.php?color=black&types=photos" shape="rect" coords="161,0,181,20">
+<area href="{SITE_ROOT}index.php?color=red&sphoto=1" shape="rect" coords="0,0,20,20">
+<area href="{SITE_ROOT}index.php?color=orange&sphoto=1" shape="rect" coords="23,0,43,20">
+<area href="{SITE_ROOT}index.php?color=yellow&sphoto=1" shape="rect" coords="46,0,66,20">
+<area href="{SITE_ROOT}index.php?color=green&sphoto=1" shape="rect" coords="69,0,89,20">
+<area href="{SITE_ROOT}index.php?color=cian&sphoto=1" shape="rect" coords="92,0,112,20">
+<area href="{SITE_ROOT}index.php?color=blue&sphoto=1" shape="rect" coords="115,0,135,20">
+<area href="{SITE_ROOT}index.php?color=magenta&sphoto=1" shape="rect" coords="138,0,158,20">
+<area href="{SITE_ROOT}index.php?color=black&sphoto=1" shape="rect" coords="161,0,181,20">
 </map>
 <img src="{TEMPLATE_ROOT}images/colors.png" width="181" height="20" border="0"  usemap="#colors">
 

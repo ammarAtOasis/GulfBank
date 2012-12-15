@@ -1,11 +1,10 @@
 <table border="0" cellpadding="0" cellspacing="0">
 <tr valign="top">
 <td width='400px'>{IMAGE}
-{if notprintsonly}
-
-
-{SIZES}
+{if editorial}
+<div class="editorial">{EDITORIAL}</div>
 {/if}
+{SIZES}
 </td>
 <td style="padding-left:17px"><h2 style="margin-bottom:6px;margin-top:0px">{WORD_FILE_DETAILS}:</h2>
 
@@ -24,14 +23,15 @@
 
 <h2 style="margin-bottom:6px;margin-top:20px">{WORD_TOOLS}:</h2>
 
-{if prints}<div class="box_members"><a href="#reviews" onclick="prints_show({ID});">{WORD_PRINTS}</a></div>{/if}
+{if back}<div class="box_members"><a href="{LINK_BACK}">{WORD_BACK}</a></div>{/if}
+{if exif}<div class="box_members"><a  href="#reviews" onclick="exif_show({ID});">{WORD_EXIF}</a></div>{/if}
 <div class="box_members"><a href="{PORTFOLIO_LINK}">{WORD_PORTFOLIO}</a></div>
 {if messages}<div class="box_members"><a href="{MAIL_LINK}">{WORD_MAIL}</a></div>{/if}
 <div class="box_members" id="favorite" name="favorite"><a href="{ADD_TO_FAVORITE_LINK}">{ADD_TO_FAVORITE}</a></div>
 {if reviews}<div class="box_members"><a href="#reviews" onclick="reviews_show({ID});">{WORD_REVIEWS}</a></div>{/if}
 <div class="box_members"><a href="#reviews"  onclick="tell_show({ID});">{WORD_TELL_A_FRIEND}</a></div>
 {if downloadsample}<div class="box_members"><a href="{DOWNLOADSAMPLE}">{WORD_DOWNLOADSAMPLE}</a></div>{/if}
-
+{if google}<div class="box_members"><a  href="#reviews" onclick="map_show({GOOGLE_X},{GOOGLE_Y});">{WORD_GOOGLE}</a></div>{/if}
 <div class="box_members"><a href="#share"  onclick="share_show({ID});">{WORD_SHARE}</a></div>
 <div id="share"></div>
 </td>

@@ -1,41 +1,47 @@
-<table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:20px">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr valign="top">
-<td class="whitebg">
-<div style="margin-bottom:3px">{AUTHOR}</div>
-<div style="margin-bottom:3px"><b>{WORD_NAME}:</b> {NAME}</div>
-<div style="margin-bottom:3px"><b>{WORD_ADDRESS}:</b> {CITY}, {COUNTRY}</div>
-<div style="margin-bottom:3px"><b>{WORD_WEBSITE}:</b> {WEBSITE}</div>
-<div style="margin-bottom:3px"><b>{WORD_DATE}:</b> {DATE}</div>
-<div style="margin-bottom:3px"><b>{WORD_COMPANY}:</b> {COMPANY}</div>
+<td class="portfolio_left">
 
+{IMAGE}
 
+<div class="portfolio_title">{WORD_PERSONAL_INFORMATION}</div>
+<div class="portfolio_box">
+	<div><b>{WORD_NAME}:</b> {NAME}</div>
+	<div><b>{WORD_ADDRESS}:</b> {CITY}, {COUNTRY}</div>
+	<div><b>{WORD_WEBSITE}:</b> {WEBSITE}</div>
+	<div><b>{WORD_DATE}:</b> {DATE}</div>
+	<div><b>{WORD_COMPANY}:</b> {COMPANY}</div>
+</div>
 
-</td>
-<td class="graybg" style="padding-left:40px">
+{if seller}
 
-<img src="{IMAGE}" border="0">
+	<div class="portfolio_title">{WORD_TOOLS}</div>
+	<div class="portfolio_box">
+		{if friends}<div class="box_members" id="friendbox" name="friendbox"><a href="{FRIEND_LINK}">{WORD_FRIEND}</a></div>{/if}
+		{if messages}<div class="box_members"><a href="{MAIL_LINK}">{WORD_MAIL}</a></div>{/if}
+		{if testimonials}<div class="box_members"><a href="{TESTIMONIAL_LINK}">{WORD_TESTIMONIAL}</a></div>{/if}
+	</div>
 
-</td>
-<td class="whitebg" style="padding-left:40px">{if seller}<h2 style="margin-bottom:6px;margin-top:0px">{WORD_PORTFOLIO}</h2>
+	<div class="portfolio_title">{WORD_PORTFOLIO}</div>
+	<div class="portfolio_box">
+		{if sitephoto}<div><b>{WORD_PHOTO}:</b> <a href="{SITE_ROOT}/index.php?user={USERID}&portfolio=1&sphoto=1">{PHOTO}</a></div>{/if}
+		{if sitevideo}<div><b>{WORD_VIDEO}:</b> <a href="{SITE_ROOT}/index.php?user={USERID}&portfolio=1&svideo=1">{VIDEO}</a></div>{/if}
+		{if siteaudio}<div><b>{WORD_AUDIO}:</b> <a href="{SITE_ROOT}/index.php?user={USERID}&portfolio=1&saudio=1">{AUDIO}</a></div>{/if}
+		{if sitevector}<div><b>{WORD_VECTOR}:</b> <a href="{SITE_ROOT}/index.php?user={USERID}&portfolio=1&svector=1">{VECTOR}</a></div>{/if}
+		<div><b>{WORD_VIEWED}:</b> {VIEWED}</div>
+		<div><b>{WORD_DOWNLOADS}:</b> {DOWNLOADS}</div>
+		{if reviews}<div><b>{WORD_REVIEWS}:</b> {REVIEWS}</div>{/if}
+	</div>
 
-
-{if sitephoto}<div style="margin-bottom:3px" class="smalltext"><b>{WORD_PHOTO}:</b> {PHOTO}</div>{/if}
-{if sitevideo}<div style="margin-bottom:3px" class="smalltext"><b>{WORD_VIDEO}:</b> {VIDEO}</div>{/if}
-{if siteaudio}<div style="margin-bottom:3px" class="smalltext"><b>{WORD_AUDIO}:</b> {AUDIO}</div>{/if}
-{if sitevector}<div style="margin-bottom:3px" class="smalltext"><b>{WORD_VECTOR}:</b> {VECTOR}</div>{/if}
-<div style="margin-bottom:3px" class="smalltext"><b>{WORD_VIEWED}:</b> {VIEWED}</div>
-<div style="margin-bottom:3px" class="smalltext"><b>{WORD_DOWNLOADS}:</b> {DOWNLOADS}</div>
-{if reviews}<div style="margin-bottom:3px" class="smalltext"><b>{WORD_REVIEWS}:</b> {REVIEWS}</div>{/if}
-
-<h2 style="margin-bottom:6px;margin-top:20px">{WORD_TOOLS}:</h2>
-
-
-{if friends}<div class="box_members" id="friendbox" name="friendbox"><a href="{FRIEND_LINK}">{WORD_FRIEND}</a></div>{/if}
-{if messages}<div class="box_members"><a href="{MAIL_LINK}">{WORD_MAIL}</a></div>{/if}
-{if testimonials}<div class="box_members"><a href="{TESTIMONIAL_LINK}">{WORD_TESTIMONIAL}</a></div>{/if}
 
 {/if}
 
 
 
-</td></tr></table>
+</td>
+<td class="portfolio_right">
+<h1>{AUTHOR}</h1>
+
+
+
+

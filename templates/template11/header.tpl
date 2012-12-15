@@ -6,6 +6,7 @@
 <link rel=stylesheet type="text/css" href="{TEMPLATE_ROOT}style.css">
 <script language="javascript" src="{SITE_ROOT}inc/scripts.js"></script>
 <script src="{SITE_ROOT}inc/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{SITE_ROOT}members/JsHttpRequest.js" type="text/javascript"></script>
 <meta name="description" content="{DESCRIPTION}">
 <meta name="keywords" content="{KEYWORDS}">
 <meta http-equiv="Content-Type" content="text/html; charset={MTG}">
