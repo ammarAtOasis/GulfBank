@@ -1,0 +1,1 @@
+<img src="{SITE_ROOT}images/e.gif" width="2" height="37" border="0">

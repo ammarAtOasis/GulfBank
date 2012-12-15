@@ -1,0 +1,173 @@
+#slider
+{
+	margin-bottom: 22px;
+	width: 667px;
+}
+
+#slider ul, #cats
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#slider ul
+{
+	width: 667px;
+	height: 293px;
+}
+
+#browse-cat
+{
+}
+
+#browse-cat .ttl
+{
+	background: #f4f5f5;
+	line-height: 39px;
+	margin-bottom: 22px;
+	color: #333;
+	font: normal 14px Arial, Helvetica, sans-serif;
+	width: 643px;
+	padding: 12px;
+}
+
+#how-to-buy
+{
+	margin-bottom: 22px;
+	color: #333;
+	font: normal 25px Arial, Helvetica, sans-serif;
+	width: 643px;
+	padding: 12px;
+}
+
+#how-to-buy img
+{
+	padding-top: 22px;
+	margin-left: 99px;
+}
+
+#browse-cat .more
+{
+	margin-bottom: 22px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	width: 643px;
+	padding: 12px;
+	border-bottom: 1px dotted #a3a4a7;
+}
+
+#browse-cat .more a
+{
+	color: #e51f28;
+	text-decoration: none;
+}
+
+#browse-cat .more a:hover
+{
+	text-decoration: underline;
+}
+
+#cats li
+{
+	float: left;
+	color: #FFF;
+	font: normal 18px Arial, Helvetica, sans-serif;
+	line-height: 27px;
+}
+
+#cats li a
+{
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	width: 137px;
+	height: 137px;
+	padding: 11px;
+}
+
+#cats .art
+{
+	background: url(../images/new/cat-art.png) no-repeat;
+}
+
+#cats .business
+{
+	background: url(../images/new/cat-business.png) no-repeat;
+	margin-left: 10px;
+}
+
+#cats .liefstyle
+{
+	background: url(../images/new/cat-lifestyle.png) no-repeat;
+	margin-left: 10px;
+}
+
+#cats .places
+{
+	background: url(../images/new/cat-places.png) no-repeat;
+	margin-left: 10px;
+}
+
+#search-arabic
+{
+	color: #e51f28;
+	background: #f9f9f9;
+	border: 1px solid #d8d8d8;
+	width: 213px;
+	height: 221px;
+	font: normal 30px Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 19px;
+}
+
+.by
+{
+	margin-top: 6px;
+}
+
+.by a
+{
+	color: #e51f28;
+	text-decoration: none;
+}
+
+#box_languages{
+	position:absolute;
+	right:70px !important;
+}
+
+#box_login
+{
+	position:absolute;
+	right: 5px;
+	top:0px
+}
+
+#box_login .amenu3 a
+{
+	color: #fff;
+}
+
+#column_right h2
+{
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #a3a4a7;
+}
+
+.fl
+{
+	float: left;
+}
+
+.fr
+{
+	float: right;
+}
+
+.clr
+{
+	clear: both;
+}
+
+

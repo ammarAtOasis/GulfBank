@@ -1,0 +1,1 @@
+<img src="{TEMPLATE_ROOT}images/r20.gif" width="23" height="26" border="0">

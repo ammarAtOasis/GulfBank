@@ -1,0 +1,1 @@
+<img src="{TEMPLATE_ROOT}images/p4.gif" width="74" height="48">

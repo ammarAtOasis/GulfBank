@@ -1,0 +1,1 @@
+<a href="{ITEM_URL}" class="w">{ITEM_TITLE}</a>

@@ -1,0 +1,1 @@
+<div style="padding-left:35px;padding-top:14px"><a href="{SITE_ROOT}" class="w"><b>{WORD_HOME}</b></a></div>

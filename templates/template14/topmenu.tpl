@@ -1,0 +1,1 @@
+<a href="{SITE_ROOT}" class="w2">{WORD_HOME}</a>

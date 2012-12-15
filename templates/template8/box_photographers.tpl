@@ -1,0 +1,1 @@
+<div class='box_photographers'><a href='{ITEM_URL}'>{ITEM_TITLE}</a></div>

@@ -1,0 +1,1 @@
+<table border="0" width="99%" cellpadding="0" cellspacing="2" background="{TEMPLATE_ROOT}images/r9.gif" style="margin-bottom:20px;margin-right:9px"><tr><td class="graybg" style="padding:7px">{SORT_MENU}</td></tr></table>

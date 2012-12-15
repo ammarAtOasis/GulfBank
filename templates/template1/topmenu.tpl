@@ -1,0 +1,1 @@
+<img src="{TEMPLATE_ROOT}images/r8.gif" width="10" height="9" align="left" vspace="0" hspace="0"><a href="{SITE_ROOT}" class="w">{WORD_HOME}</a>
